@@ -2,15 +2,13 @@ module Itamae
   module DefaultAttributes
     module Extension
       def load(vars = {})
-        load_default_attributes
+        attributes_loader.load
         super
       end
 
-      def load_default_attributes
-        return if Itamae::DefaultAttributes.loaded_paths.include?(attributes_path)
-        context = Itamae::DefaultAttributes::EvalContext.new
-        context.instance_eval(File.read(attributes_path), attributes_path, 1)
-        Itamae::DefaultAttributes.loaded_paths << attributes_path
+      def attributes_loader
+        @attributes_loader ||=
+          Itamae::DefaultAttributes::AttributesLoader.new(self, attributes_path)
       end
 
       def attributes_path
