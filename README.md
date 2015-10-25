@@ -1,4 +1,7 @@
 # Itamae::DefaultAttributes
+
+[![Gem Version](https://badge.fury.io/rb/itamae-default_attributes.svg)](https://badge.fury.io/rb/itamae-default_attributes)
+
 Using itamae-default_attributes, recipes can load default attributes.
 
 ## Installation
