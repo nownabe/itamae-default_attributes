@@ -2,6 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/itamae-default_attributes.svg)](https://badge.fury.io/rb/itamae-default_attributes)
 [![Code Climate](https://codeclimate.com/github/nownabe/itamae-default_attributes/badges/gpa.svg)](https://codeclimate.com/github/nownabe/itamae-default_attributes)
+[![Test Coverage](https://codeclimate.com/github/nownabe/itamae-default_attributes/badges/coverage.svg)](https://codeclimate.com/github/nownabe/itamae-default_attributes/coverage)
 
 Using itamae-default_attributes, recipes can load default attributes.
 
